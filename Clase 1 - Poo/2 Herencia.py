@@ -10,6 +10,7 @@ class Stack:
         del self.__stk[-1]
         return val
 
+
 class AddingStack(Stack):
     def __init__(self):
         Stack.__init__(self)
@@ -26,9 +27,9 @@ class AddingStack(Stack):
 
     
 
-little_stack = Stack()
-another_stack = Stack()
-funny_stack = Stack()
+little_stack = AddingStack()
+another_stack = AddingStack()
+funny_stack = AddingStack()
 little_stack.push(1)
 another_stack.push(little_stack.pop() + 1)
 print(another_stack.getSum())

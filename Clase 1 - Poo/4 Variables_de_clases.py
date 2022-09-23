@@ -6,4 +6,6 @@ class Class:
             self.b = 1
 object = Class(1)
 print(object.a)
-print(object.b) 
+
+if hasattr(object, 'b'):
+    print(object.b)
