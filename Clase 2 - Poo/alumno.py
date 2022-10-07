@@ -9,6 +9,3 @@ class Alumno(Persona):
     
     def getRut(self):
         return super().getRut()
-
-a = Alumno("111-1","mario","el bueno","25")
-print(a)
