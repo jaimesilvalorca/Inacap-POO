@@ -77,30 +77,3 @@ while True:
             else:
                print("Usted debe registrar antes que todo la asignatura")
             tecla = input("Digite enter para continuar") 
-
-"""p = Profesor("1-1","Pedro","Gonzalez","A1")
-a = Alumno("33-3","Juan","Covarrubias",22)
-b = Alumno("44-4","Diego","Soto",21)
-c = Alumno("55-5","Claudia","Tapia",25)
-
-asi = Asignatura(10101, "POO" )
-print(asi)
-asi.listar()
-
-
-print(asi.matricular(a))
-print(asi.matricular(b))
-print(asi.matricular(c))
-
-asi.listar()
-asi.setProfesor(p)
-asi.listar()
-
-asi.addNota("33-3",5)
-asi.addNota("33-3",4)
-asi.addNota("33-3",4)
-asi.addNota("44-4",5)
-
-asi.printNotas("33-3")
-  
-asi.listarNotas()"""

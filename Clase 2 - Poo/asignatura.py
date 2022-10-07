@@ -42,13 +42,13 @@ class Asignatura:
     
     """Agrega nota de alumno por medio de su rut,
     dentro del diccionario notas"""
-    def addNota(self, rut, nota):
+    def addNota(self, rut, nota): #agregar nuevas notas, numero de ingreso y porcentaje (self, rut, nota,posicion,porcentaje)
         if self.getAlumno(rut) is not None:
             if rut not in self.__notas.keys():
                 self.__notas[rut] = []
-                self.__notas[rut].append(nota)
+                self.__notas[rut].append(nota) #Nota(posicion,porcentaje,nota) self.__notas[rut].append(Nota(posicion,porcentaje,nota))
             else:
-                self.__notas[rut].append(nota)
+                self.__notas[rut].append(nota) #
         else:
             print("alumno No matriculado")
     
